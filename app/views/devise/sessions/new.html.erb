@@ -1,10 +1,14 @@
 <div class="row">
   <div class="col-md-6 col-md-offset-3 text-center">
+
     <h2>Log in</h2>
 
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <!-- this shows the custom notification that was created using toastr, it replaced the notifications given by devise and uses JS instead.  -->
+      <%= render 'shared/devisemes' %>
+
       <div class="form-group">
-        <%= f.email_field :email, autofocus: true, :class => "form-control", :placeholder => "Email" %>
+        <%= f.email_field :email, :class => "form-control", :placeholder => "Email" %>
         <!-- this was in password and remember_me, I think it gets rid of the name for the space and instead in replaced by the placeholder, which is the name in the space where text is written. It looks cleaner that way f.label :password<br /> -->
       </div>
 
