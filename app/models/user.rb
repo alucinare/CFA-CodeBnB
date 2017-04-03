@@ -3,6 +3,7 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
-
-  validates :fullname, presence: true, length: {maxmum: 50}
+  #DEVISE - the fullname property must be present and it max length is 50
+  validates :fullname, presence: true, length: {maximum: 50}
+  # For more information: http://guides.rubyonrails.org/active_record_validations.html
 end
