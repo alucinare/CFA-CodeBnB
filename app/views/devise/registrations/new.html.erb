@@ -29,5 +29,7 @@
         <%= f.submit "Sign Up", :class => "btn btn-primary" %>
       </div>
     <% end %>
+
+    <%= link_to "Sign In with Facebook", user_facebook_omniauth_authorize_path, class: "btn btn-primary" %>
   </div>
 </div>

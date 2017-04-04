@@ -1,24 +1,35 @@
-# README
+# CFA-CoderBnB
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A clone of the popular accomodation booking site AirBnB.
 
-Things you may want to cover:
+## About the Project
 
-* Ruby version
+A tutorial that supplements class learning about building an AirBnB clone.
 
-* System dependencies
+## Requirements
 
-* Configuration
+- Ruby 2.0 or later.
+- Rails 5.0 or later.
+- Devise
+- Bootstrap-sass
+- Toastr-rails
+- Sendgrid-rails
+gem 'omniauth
+gem 'omniauth-facebook'
 
-* Database creation
+## Installation
 
-* Database initialization
+Add this line to your application's Gemfile:
 
-* How to run the test suite
+  `gems to add`
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+### Extra stuff to do for program to run
 
-* ...
+
+## Usage
+
+In the terminal:
+
+
+## Known Bugs
