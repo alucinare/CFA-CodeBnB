@@ -1,6 +1,6 @@
 class Room < ApplicationRecord
   belongs_to :user
-
+  #  Validations are used to ensure that only valid data is saved into your database
   validates :home_type, presence: true
   validates :room_type, presence: true
   validates :accommodate, presence: true
