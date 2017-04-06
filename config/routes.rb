@@ -1,17 +1,5 @@
 Rails.application.routes.draw do
 
-  get 'rooms/index'
-
-  get 'rooms/show'
-
-  get 'rooms/new'
-
-  get 'rooms/create'
-
-  get 'rooms/edit'
-
-  get 'rooms/update'
-
   root 'pages#home'
 
   devise_for :users,
@@ -26,4 +14,5 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
   resources :users, only: [:show]
+  resources :rooms
 end
